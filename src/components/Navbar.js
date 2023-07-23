@@ -10,7 +10,7 @@ import { Toolbar } from 'primereact/toolbar';
 import { Link } from 'react-scroll';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import "./CustomNavbar.css";
-
+import logoImage from "../images/logo.JPG"
 function CollapsibleExample() {
   const buttonVariants = {
     rest: { scale: 1 },
@@ -23,7 +23,7 @@ function CollapsibleExample() {
         <Container> {/* Wrap the component with Container */}
           <Navbar.Brand href="#home">
             <div className="d-flex align-items-center">
-              <img src="/images/logo.jpg" alt="Logo" className="logo" style={{ width: '70px' }} />
+              <img src={logoImage} alt="Logo" className="logo" style={{ width: '70px' }} />
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
