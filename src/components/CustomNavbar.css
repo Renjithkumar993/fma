@@ -1,0 +1,14 @@
+.box-gradient {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff00b8, #3a7bd5); /* Replace these colors with your desired gradient */
+    color: #fff; /* Text color for the button */
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .box-gradient:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4), 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
