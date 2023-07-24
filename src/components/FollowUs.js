@@ -16,16 +16,14 @@ function FollowUs() {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        padding: '20px',
-        backgroundColor: '#f1f1f1',
-        borderRadius: '10px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+        padding: '40px',
       }}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      className= "bg-dark"
     >
-      <h3>Follow Us</h3>
+      <h3 className ="text-danger">Follow Us</h3>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
         <a href="#" style={socialIconStyle}>
           <FaFacebook size={40} />
