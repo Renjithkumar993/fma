@@ -10,7 +10,8 @@ import { Toolbar } from 'primereact/toolbar';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import "./CustomNavbar.css";
-import logoImage from "../images/logo.JPG"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars} from '@fortawesome/free-solid-svg-icons';
 
 function CollapsibleExample() {
   const buttonVariants = {
@@ -18,7 +19,7 @@ function CollapsibleExample() {
     hover: { scale: 1.1, boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.2)', transition: { duration: 0.3 } },
   };
   const fmaLogoStyle = {
-    backgroundColor: '#FFC107', // Yellow color representing prosperity and warmth
+ // Yellow color representing prosperity and warmth
     color: '#FFFFFF', // White text for contrast
     padding: '15px',
     borderRadius: '10px', // Rounded corners
@@ -33,7 +34,7 @@ function CollapsibleExample() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <Navbar expand="lg" className="bg-light" fixed="top">
+      <Navbar expand="lg" className="bg-black" fixed="top">
         <Container> {/* Wrap the component with Container */}
         <Navbar.Brand href="/">
         <div style={fmaLogoStyle}>
@@ -41,15 +42,12 @@ function CollapsibleExample() {
           FMA
           <span style={{ marginLeft: '8px' }}>🍁</span> {/* Maple leaf emoji for Canada */}
         </div>
-        <div style={{ fontSize: '14px', marginTop: '10px' }}>
-          Fredericton Malayalee Association
-        </div>
-        <div style={{ fontSize: '12px', fontWeight: 'normal' }}>
-          Celebrating Kerala Culture in Canada
-        </div>
       </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <FontAwesomeIcon icon={faBars} beat size="2xl" style={{color: "#fcfcfc",}} />
+            </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
+        
             <Nav className="ml-auto"> {/* Change 'mr-auto' to 'ml-auto' to align links to the right */}
               {/* Use the Link component with the 'to' prop set to '/register' */}
               <Link

@@ -28,14 +28,14 @@ const FadingWords = ({ words }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       style={{
-        fontSize: '24px',
+        fontSize: '50px',
         fontWeight: 'bold',
         fontFamily: 'Arial, sans-serif',
         textAlign: 'center',
-        textTransform: 'uppercase',
-        color: '#333',
+
+        color: 'green',
         padding: '20px',
-        background: '#f9f9f9',
+        background: 'black',
         borderRadius: '8px',
         boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
         width: '100%',
@@ -70,11 +70,14 @@ const AboutUs = () => {
       initial="hidden"
       animate="visible"
       variants={animationVariants}
-      className="container mt-5 "
+      className=" mt-5 bg-black text-white p-5 "
+      
     >
       <div className="row align-items-center">
         <div className="col-md-6">
-          <h2 className="mb-5">About Us</h2>
+        <h2 className="title" style={{ fontFamily: 'Georgia, serif', fontSize: '50px', fontWeight: 'bold', color: 'white' }}>
+              About Us
+              </h2>
           <p>
             Welcome to the vibrant and diverse Malayalee Community Group in
             Fredericton, Canada. We are a group of individuals who share a
@@ -98,8 +101,7 @@ const AboutUs = () => {
 
         </div>
         <div className="col-md-6">
-          {/* Fading words related to the community group */}
-          <FadingWords words={communityWords} />
+          <FadingWords words={communityWords}/>
           <div className="d-flex justify-content-center align-items-center mt-5">
             <div className="mr-4">
               <FontAwesomeIcon icon={faGlobeAsia} size="3x" />

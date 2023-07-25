@@ -78,8 +78,10 @@ const WhyFMA = () => {
   );
 
   return (
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">Why Choose FMA?</h2>
+    <div className="container mt-3">
+      <h2 className="text-center mb-4" style={{ fontFamily: 'Arial, sans-serif', fontSize: '32px', fontWeight: 'bold', color: 'black' }}>
+              Why Choose <span className ="text-danger" style={{fontWeight:"bold"}}> FMA</span>?
+            </h2>
       <div className="carousel-wrapper ">
         <div className="row justify-content-center">
           {chunkedWhyFMAData.map((carouselItems, index) => (
